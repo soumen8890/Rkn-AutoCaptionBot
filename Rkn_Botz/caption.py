@@ -222,7 +222,7 @@ async def auto_caption(client, message):
                 episode=detect_episode(original_caption),
                 season=detect_season(original_caption),
                 year=detect_year(original_caption),
-                quelty=detect_quality(original_caption)
+                quality=detect_quality(original_caption), 
                 file_size=convert_size(file_size) if file_size else "Unknown"  # ✅ Fixed
             )
         else:
